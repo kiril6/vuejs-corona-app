@@ -1,6 +1,6 @@
 # vue-corona-app
 Corona app made with Vue and Firebase
-Live demo: netlify link
+Live demo: https://modest-mestorf-02b3ab.netlify.app
 
 ## Project files description
 App.vue - main application
