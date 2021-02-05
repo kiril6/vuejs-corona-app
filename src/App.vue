@@ -71,7 +71,6 @@
             </template>
 
             <template v-else>
-                <Typeahead v-model="model" target="#input" :data="states" item-key="name" />
                 <div class="filters">
                     <input v-model="filterDate" :class="filterDate ? 'active' : '' " type="date" autocomplete="off" />
                     <input v-model="filterName" :class="filterName ? 'active' : '' " type="text" autocomplete="off" placeholder="Filter by Name" />
@@ -102,9 +101,7 @@ import {
     db
 } from '@/main'
 import Register from './Register.vue'
-import {
-    Typeahead
-} from 'uiv'
+
 export default {
 
     name: 'App',

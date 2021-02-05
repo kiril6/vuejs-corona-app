@@ -2,6 +2,12 @@
 Corona app made with Vue and Firebase
 Live demo: netlify link
 
+## Project files description
+App.vue - main application
+Register.vue - a component (for one-time registration) called inside App.vue
+Particles.vue - a component (animation background) called inside Register.vue
+store.js - VUEX state management for the data
+
 ## Project setup
 ```
 npm install
