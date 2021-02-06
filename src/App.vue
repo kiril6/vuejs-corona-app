@@ -113,8 +113,6 @@ export default {
     },
     created() {
         this.getStorage();
-        this.model = this.$store.getters.getItems;
-        console.log(this.model);
     },
     data() {
         return {
