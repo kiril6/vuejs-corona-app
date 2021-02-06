@@ -61,7 +61,7 @@
         <div class="items-list" v-if="this.$store.getters.getItems && this.$store.getters.getItems.length > 0">
             <template v-if="isActive">
                 <div class="items-holder" v-for="(item, index) in this.$store.getters.getItems.reverse()" :key="item.id">
-                    <template v-if="!item.checked && index <=3">
+                    <template v-if="!item.checked && index < 3">
                         <div>{{ item.date }}</div>
                         <div>{{ item.timeOfDay }}</div>
                         <div>{{ item.title }}</div>

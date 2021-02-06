@@ -1,7 +1,10 @@
 import Vue from "vue";
 import App from "./App.vue";
 import store from "./store";
-import firebase from "firebase";
+import firebase from 'firebase/app';
+import 'firebase/database';
+import 'firebase/firestore';
+import 'firebase/analytics';
 import VueTablerIcons from 'vue-tabler-icons';
 
 Vue.config.productionTip = false;
