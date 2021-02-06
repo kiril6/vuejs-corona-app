@@ -100,6 +100,7 @@
 import {
     db
 } from '@/main'
+
 import Register from './Register.vue'
 
 export default {
@@ -230,6 +231,7 @@ export default {
                         this.enterDate = '';
                         this.enterTimeOfDay = '';
                         this.enterLocation = '';
+                        location.reload();
                     }
                 }).catch((error) => {
                     this.errors = error
