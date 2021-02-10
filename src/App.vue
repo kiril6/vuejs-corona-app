@@ -13,6 +13,13 @@
             <div class="title" :class="!isActive ? 'active' : ''" @click="isActive=false">
                 <file-report-icon class="icon" /> {{ reports }}</div>
         </div>
+
+        <div v-if="this.aboutApp" :class="!this.aboutApp ? 'about' : 'about active'">
+            <div>
+                <a href="http://delovski.net/qr" target="_blank"><img src="./assets/images/qr.png" alt="about app"></a>
+            </div>
+        </div>
+
         <template v-if="isActive">
             <div class="title">{{ titleIntro }}</div>
             <input tabindex="1" autocomplete="off" type="date" v-model="enterDate">
@@ -43,12 +50,6 @@
                 <div>
                     <wifi-off-icon size="52" />
                     <div>{{offlineTitle}}</div>
-                </div>
-            </div>
-
-            <div v-if="this.aboutApp" :class="!this.aboutApp ? 'about' : 'about active'">
-                <div>
-                    <a href="http://delovski.net/qr" target="_blank"><img src="./assets/images/qr.png" alt="about app"></a>
                 </div>
             </div>
 
@@ -505,6 +506,7 @@ button {
     align-items: center;
     color: black;
     background-color: rgba(255, 255, 255, 0.4);
+    z-index: 10;
 
     &.active {
         animation: fadeOut ease 5s;
