@@ -135,17 +135,7 @@ $lightskyblue: lightskyblue;
         position: relative;
 
         #corona-logo {
-            width: 130px;
-            display: flex;
-            margin: 0 auto 20px auto;
-            padding: 4px;
-            transition: all 1s ease-in-out;
-            border-radius: 15%;
             box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.75);
-
-            &:hover {
-                transform: scale(1.1);
-            }
         }
 
         .intro {
@@ -223,6 +213,5 @@ $lightskyblue: lightskyblue;
             }
         }
     }
-
 }
 </style>

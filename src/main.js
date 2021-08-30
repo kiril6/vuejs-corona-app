@@ -28,7 +28,23 @@ firebase.analytics();
 
 export const db = firebase.firestore();
 
+const IsRegistered = Vue.observable({
+  registered: false,
+  
+  check () {
+    IsRegistered.registered = true;
+  },
+
+});
+
+Vue.prototype.$isRegistered = IsRegistered;
+
 new Vue({
   store,
+  watch: {
+    '$isRegistered.registered' () {
+      return
+    }
+  },
   render: (h) => h(App),
 }).$mount("#app");
